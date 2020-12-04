@@ -4,7 +4,7 @@ use std::error::Error;
 
 fn main() -> Result<(), Box<dyn Error>> {
     let task_part = &env::args().collect::<Vec<String>>()[1];
-    let input = fs::read_to_string("input")?;
+    let input = fs::read_to_string("input.txt")?;
 
     let mut res = 0;
     if task_part=="1" {
